@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_profile"
+            android:title="@string/te_menu_profile"/>
+        <item
+            android:id="@+id/nav_messages"
+            android:icon="@drawable/ic_menu_messages"
+            android:title="@string/te_menu_messages" />
+        <item
+            android:id="@+id/nav_favourites"
+            android:icon="@drawable/ic_menu_favourites"
+            android:title="@string/te_menu_favourites" />
+        <item
+            android:id="@+id/nav_friendlist"
+            android:icon="@drawable/ic_menu_friendlist"
+            android:title="@string/te_menu_friendlist" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_menu_search"
+            android:title="@string/te_menu_search" />
+        <item
+            android:id="@+id/nav_marketplace"
+            android:icon="@drawable/ic_menu_marketplace"
+            android:title="@string/te_menu_marketplace" />
+        <item
+            android:id="@+id/nav_space"
+            android:title="" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_settings"
+            android:title="@string/te_menu_settings" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_menu_about"
+            android:title="@string/te_menu_about" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_logout"
+            android:title="@string/te_menu_logout" />
+    </group>
+
+</menu>

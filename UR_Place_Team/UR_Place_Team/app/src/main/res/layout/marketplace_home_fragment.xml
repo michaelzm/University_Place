@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="60dp"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="35sp"
+        android:text="Marketplace"
+        android:layout_marginTop="60dp"
+        android:id="@+id/textTitle" />
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/textTitle"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/line1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/bt_mp_show_offers"
+        android:text="Angebote durchsuchen"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_mp_show_offers"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/bt_mp_favorites"
+        android:text="Favoriten" />
+
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/bt_mp_favorites"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/line2"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/bt_mp_create_offer"
+        android:text="Angebot erstellen" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_mp_create_offer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/bt_mp_search_offers"
+        android:text="eigene Angebote ansehen" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bt_mp_search_offers"
+        android:textSize="10dp"
+        android:text="zusätzliche Funktionene:"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textAdditional" />
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textAdditional"
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="10dp"
+        android:id="@+id/debug1"
+        android:text="Kategorie erstellen" />
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textAdditional"
+        android:layout_toRightOf="@+id/debug1"
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="10dp"
+        android:id="@+id/debug2"
+        android:text="Marketplace aktualisieren" />
+
+
+
+</RelativeLayout>

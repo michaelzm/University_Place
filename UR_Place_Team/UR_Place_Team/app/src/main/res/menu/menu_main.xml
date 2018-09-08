@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="de.ur.wi2_intern.ur_place.urplace.Profile.MainActivity">
+    <item
+        android:id="@+id/main_options"
+        android:icon="@drawable/ic_main_options"
+        android:title="@string/te_menu_options"
+        app:showAsAction="always"/>
+</menu>

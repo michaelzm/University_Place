@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:layout_marginTop="40dp"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background_color_create"
+        tools:layout_editor_absoluteY="81dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="Hier kannst du eine neue Kategorie erstellen:"
+            android:id="@+id/toptext"
+            android:layout_marginTop="40dp"/>
+
+        <EditText
+            android:id="@+id/text_input_category"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:inputType="text"
+            android:hint="neue Kategorie angeben"
+            android:layout_below="@id/toptext"/>
+
+        <Button
+            android:id="@+id/bt_co_publish_offer"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="10sp"
+            android:layout_below="@id/text_input_category"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="Kategorie erstellen"
+            />
+        <Button
+            android:id="@+id/bt_co_get_category"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="10sp"
+            android:layout_below="@id/text_input_category"
+            android:layout_toRightOf="@id/bt_co_publish_offer"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="Kategorien aktualisieren" />
+    </RelativeLayout>
+</ScrollView>

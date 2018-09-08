@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_ma_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Profile.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_main_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/iv_main_profile_picture"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintDimensionRatio="H,"
+        app:layout_constraintRight_toLeftOf="@+id/gl_main_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_main_student_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/example_name"
+        app:layout_constraintBottom_toTopOf="@+id/tv_main_age"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_main_subject" />
+
+
+    <TextView
+        android:id="@+id/tv_main_age"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/example_age"
+        app:layout_constraintBottom_toTopOf="@+id/tv_main_gender"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_main_subject" />
+
+    <TextView
+        android:id="@+id/tv_main_gender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/example_gender"
+        app:layout_constraintBottom_toTopOf="@+id/tv_main_subject"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_main_subject" />
+
+    <TextView
+        android:id="@+id/tv_main_subject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/example_subject"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_main_profile_picture"
+        app:layout_constraintLeft_toRightOf="@+id/gl_main_vertical" />
+
+    <ExpandableListView
+        android:id="@+id/elv_main_posts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_main_profile_picture"
+        tools:listheader="@layout/post_group_item"
+        tools:listitem="@layout/comment_child_item_no_picture"
+        tools:listfooter="@layout/comment_child_add_comment"
+        />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/toptextFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Maximal ein Feld pro Suche möglich! Dieses bitte anklicken und ausfüllen!" />
+
+    <TextView
+        android:id="@+id/choose_category"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/searchTitle"
+        android:layout_marginTop="97dp"
+        android:hint="Kategoriefilter auswählen"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/searchTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/submit_filter"
+        android:layout_marginTop="131dp"
+        android:hint="nach Artikel suchen"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/submit_filter"
+        android:layout_width="348dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/input_high_price"
+        android:layout_centerHorizontal="true"
+        android:text="Filter anwenden"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/input_high_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/searchTitle"
+        android:layout_below="@+id/searchTitle"
+        android:hint="Preisobergrenze"
+        android:inputType="numberDecimal"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/input_low_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/searchTitle"
+        android:layout_marginEnd="116dp"
+        android:hint="Preisuntergrenze"
+        android:inputType="numberDecimal"
+        android:textSize="15sp" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="52dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Titel" />
+
+        <RadioButton
+            android:id="@+id/radio_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kategorie" />
+
+        <RadioButton
+            android:id="@+id/radio_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preis" />
+
+    </RadioGroup>
+
+</RelativeLayout>

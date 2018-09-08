@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="de.ur.wi2_intern.ur_place.urplace">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
+
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_urplace_v1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_urplace_v1_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Profile.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".Profile.OptionsActivity"
+            android:label="@string/te_menu_options"
+            android:parentActivityName=".Profile.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MessagesActivity"
+            android:label="@string/title_activity_messages"
+            android:parentActivityName=".Profile.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FavouritesActivity"
+            android:label="@string/title_activity_favourites"
+            android:parentActivityName=".Profile.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FriendlistActivity"
+            android:label="@string/title_activity_friendlist"
+            android:parentActivityName=".Profile.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/title_activity_search"
+            android:parentActivityName=".Profile.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MessagingActivity"
+            android:label="@string/title_activity_messaging"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Marketplace.MarketplaceMainActivity"
+            android:label="@string/title_activity_marketplace"
+            android:parentActivityName=".Profile.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Marketplace.CreateArticleActivity"/>
+
+        <activity
+            android:name=".Settings.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".Profile.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName=".Profile.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Marketplace.ShowArticles"
+            android:parentActivityName=".Marketplace.MarketplaceMainActivity"/>
+        <activity android:name=".Marketplace.DetailedArticleActivity" />
+        <activity android:name=".Marketplace.MarketplaceFilterActivity"
+            android:parentActivityName=".Marketplace.MarketplaceMainActivity"/>
+
+        <activity
+            android:name=".Marketplace.ArticleOptions"
+            android:label="@string/te_article_options"
+            android:parentActivityName=".Marketplace.MarketplaceMainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity
+            android:name=".Login.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:parentActivityName=".Login.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <service android:name=".retrofit.NetworkService" />
+
+        <receiver android:name=".Profile.MainActivity$MainActivityBroadcastReceiver" />
+
+
+    </application>
+
+</manifest>

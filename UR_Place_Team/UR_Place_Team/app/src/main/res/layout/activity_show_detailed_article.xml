@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/favorite_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="#00ffffff"
+            android:src="@android:drawable/btn_star" />
+
+        <ImageView
+            android:id="@+id/iv_sa_article"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp" />
+
+        <TextView
+            android:id="@+id/tv_sa_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_sa_article"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_sa_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_sa_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="24sp" />
+
+
+        <EditText
+            android:id="@+id/et_sa_bid_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_sa_price"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="24sp"
+            android:inputType="numberDecimal"/>
+
+        <Button
+            android:id="@+id/bt_sa_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_sa_price"
+            android:layout_toRightOf="@id/et_sa_bid_price"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/tv_sa_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bt_sa_buy"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_sa_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_sa_description"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/tv_created"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_sa_contact"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/tv_inshopUntil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_created"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="24sp"/>
+
+    </RelativeLayout>
+</ScrollView>
